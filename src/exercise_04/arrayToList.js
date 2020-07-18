@@ -22,8 +22,6 @@ export default function arrayToList(array) {
       p.next = new Node(array.shift());
       p = p.next;
     }
-
   }
   return result;
 }
-
