@@ -9,7 +9,7 @@ export function range(start, end) {
   const len = end - start;
   const result = [];
   let indexNum = start;
-  for (let i = 0; i < Math.abs(len); i++ ) {
+  for (let i = 0; i < Math.abs(len); i ++) {
     result.push(indexNum);
     indexNum = len > 0 ? indexNum + 1 : indexNum - 1;
   }
