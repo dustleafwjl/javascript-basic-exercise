@@ -7,6 +7,7 @@ export default function formatNumber(number, option) {
   //
   // * Please implement the function and pass all the tests in format_number_spec.js.
   // * Please do NOT modify the signature of the function.
-
-  throw new Error('Please delete this line and implement the function');
+  // const number1n00 = number * 100;
+  // return option ? `$ ${Math.round(number100) / 100}` : `${Math.round(number100) / 100}`;
+  return option ? `$ ${number.toFixed(2)}` : `${number.toFixed(2)}`;
 }
