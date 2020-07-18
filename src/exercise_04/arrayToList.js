@@ -5,6 +5,25 @@ export default function arrayToList(array) {
   //
   // * Please implement this function and pass all the tests in array_to_list_spec.js.
   // * Please do NOT modify the signature of the function.
+  function Node(val) {
+    this.value = val;
+    this.next = null;
+  }
 
-  throw new Error('Please delete this line and implement the function');
+  if (!array) throw new Error('Creating list from undefined array');
+  if (array.length === 0) throw new Error('Creating list from empty array');
+  let result;
+  let p;
+  while (array.length !== 0) {
+    if (!result) {
+      result = new Node(array.shift());
+      p = result;
+    } else {
+      p.next = new Node(array.shift());
+      p = p.next;
+    }
+
+  }
+  return result;
 }
+
